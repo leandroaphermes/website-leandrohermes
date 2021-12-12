@@ -48,30 +48,20 @@ export type ThemeTypeColor = typeof ligth; // This is the type definition for my
 
 export const ligth = {
   colors: {
-    primary: "#F231A5",
-    secondary: "#3CD3C1",
-    mainBg: "#06092B",
-    lightBg: "#F2F2F2",
-    white: "#FAFAFA",
-    black: "#030517",
-    lightGray: "#EAEAEA",
-    gray: "#8F8F8F",
-    darkGray: "#2E2F42",
-    red: "#FF6347",
+    primary: "#15F",
+    secondary: "#4AF",
+    text: "#333",
+    gray: "#363537",
+    bodyBg: "linear-gradient(#EEE, #E2E2E2)",
   },
 };
 export const dark: ThemeTypeColor = {
   colors: {
-    primary: "#F231A5",
-    secondary: "#3CD3C1",
-    mainBg: "#06092B",
-    lightBg: "#F2F2F2",
-    white: "#FAFAFA",
-    black: "#030517",
-    lightGray: "#EAEAEA",
-    gray: "#8F8F8F",
-    darkGray: "#2E2F42",
-    red: "#FF6347",
+    primary: "#15F",
+    secondary: "#4AF",
+    text: "#333",
+    gray: "#363537",
+    bodyBg: "linear-gradient(#EEE, #E2E2E2)",
   },
 };
 

@@ -20,9 +20,15 @@ const GlobalStyles = createGlobalStyle`
       font-size: 62.5%;
     }
 
+    body,
+    #__next {
+      height: 100vh;
+    }
+
     body {
       font-size: ${theme.font.sizes.medium};
-      background-color: ${theme.colors.mainBg};
+      color: ${theme.colors.text};
+      background: ${theme.colors.bodyBg};
     }
   `}
 
