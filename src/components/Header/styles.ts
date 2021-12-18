@@ -8,8 +8,8 @@ export const Wrapper = styled.header`
   flex-wrap: nowrap;
   min-width: 28rem;
   ${({ theme }) => css`
-    padding: ${theme.spacings.medium};
-    box-shadow: -4px -6px 12px 0px ${theme.colors.secondary};
+    background-color: ${theme.colors.primary};
+    box-shadow: -4px -6px 12px 0px ${theme.colors.primary};
   `}
 `;
 
@@ -25,7 +25,10 @@ export const ContainerPerfio = styled.div`
 `;
 
 export const WrapperMenu = styled.nav`
+  flex: 1;
+  display: block;
+  width: 100%;
   ${({ theme }) => css`
-    padding: ${theme.spacings.small};
+    padding: ${theme.spacings.medium};
   `}
 `;

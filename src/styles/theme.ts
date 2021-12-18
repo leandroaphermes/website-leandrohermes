@@ -57,11 +57,11 @@ export const ligth = {
 };
 export const dark: ThemeTypeColor = {
   colors: {
-    primary: "#15F",
-    secondary: "#4AF",
-    text: "#333",
-    gray: "#363537",
-    bodyBg: "linear-gradient(#EEE, #E2E2E2)",
+    primary: "#0a0c0a",
+    secondary: "#2a2c2a",
+    text: "#DDD",
+    gray: "#999",
+    bodyBg: "linear-gradient(137deg,#2c2c2c,#0a0c0a)",
   },
 };
 

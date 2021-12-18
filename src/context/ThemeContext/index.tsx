@@ -18,7 +18,7 @@ export default function ThemeProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [themeColor, setThemeColor] = useState<TypeColor>("ligth");
+  const [themeColor, setThemeColor] = useState<TypeColor>("dark");
   return (
     <ThemeContext.Provider
       value={{
