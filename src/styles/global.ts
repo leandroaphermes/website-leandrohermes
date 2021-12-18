@@ -1,6 +1,11 @@
 import { createGlobalStyle, css } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: "Asap";
+    src: url("/fonts/asap/Asap-Regular.ttf") format("truetype");
+  }
+
 
   * {
     margin: 0;
@@ -18,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
   ${({ theme }) => css`
     html {
       font-size: 62.5%;
+      font-family: "Asap";
     }
 
     body,
