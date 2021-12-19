@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Main = styled.main`
-  display: flex;
+  overflow: auto;
   flex: 1;
 
   ${({ theme }) => css`
