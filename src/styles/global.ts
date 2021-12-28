@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
   ${({ theme }) => css`
     html {
       font-size: 62.5%;
-      font-family: "Asap";
+      font-family: ${theme.font.family};
     }
 
     body,
@@ -34,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-size: ${theme.font.sizes.medium};
       color: ${theme.colors.text};
-      background: ${theme.colors.bodyBg};
+      background: ${theme.colors.primary};
     }
   `}
 

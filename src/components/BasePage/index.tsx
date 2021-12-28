@@ -1,16 +1,18 @@
 import Header from "components/Header";
 import React, { ReactElement } from "react";
-import { Wrapper, Main } from "./styles";
+import { Wrapper, Main, Content } from "./styles";
 
-interface Props {
+interface BasePageProps {
   children: React.ReactNode;
 }
 
-export default function BasePage({ children }: Props): ReactElement {
+export default function BasePage({ children }: BasePageProps): ReactElement {
   return (
     <Wrapper>
       <Header />
-      <Main>{children}</Main>
+      <Main>
+        <Content>{children}</Content>
+      </Main>
     </Wrapper>
   );
 }
