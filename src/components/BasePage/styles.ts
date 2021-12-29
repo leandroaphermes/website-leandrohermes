@@ -9,6 +9,10 @@ export const Main = styled.main`
   overflow: auto;
   flex: 1;
   margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   ${({ theme }) => css`
     padding: ${theme.spacings.medium};
@@ -16,8 +20,7 @@ export const Main = styled.main`
 `;
 
 export const Content = styled.div`
-  margin: 0px auto;
-
+  width: 100%;
   ${({ theme }) => css`
     padding: ${theme.spacings.medium};
     max-width: 1400px;

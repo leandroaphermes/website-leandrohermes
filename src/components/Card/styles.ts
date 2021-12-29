@@ -10,7 +10,7 @@ export const Wrapper = styled.section`
 
 export const Header = styled.header`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xlarge};
+    font-size: ${theme.font.sizes.huge};
     border-bottom: 1px solid ${theme.colors.secondary};
     padding: calc(${theme.spacings.xsmall} / 2) 0px;
   `}

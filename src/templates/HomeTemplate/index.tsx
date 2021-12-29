@@ -2,118 +2,29 @@ import React, { ReactElement } from "react";
 import BasePage from "components/BasePage";
 import Card from "components/Card";
 
+import * as S from "./styles";
+
 interface Props {}
 
 export default function HomeTemplate({}: Props): ReactElement {
   return (
     <BasePage>
-      <Card title="Sobre">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <br />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-      </Card>
-      <Card title="Sobre">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <br />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-      </Card>
-      <Card title="Sobre">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <br />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-      </Card>
-      <Card title="Sobre">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <br />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-          cupiditate debitis sint sapiente, dolore unde voluptatum molestiae
-          aliquam suscipit excepturi quo ex nihil corporis voluptates quidem
-          laudantium laboriosam. Ea?
-        </p>
+      <Card title="Leandro Hermes">
+        <S.ContainerInfo>
+          <span>Sinop - Mato Grosso</span>
+          <a
+            href="https://api.whatsapp.com/send?phone=556699977294&text="
+            title="Enviar mensagem pelo WhatsApp"
+          >
+            (66) 9 9977-7294
+          </a>
+          <a
+            href="mailto:leandro.aparecido.hermes@gmail.com"
+            title="Enviar um email para leandro.aparecido.hermes@gmail.com"
+          >
+            leandro.aparecido.hermes@gmail.com
+          </a>
+        </S.ContainerInfo>
       </Card>
     </BasePage>
   );
