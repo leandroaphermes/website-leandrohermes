@@ -3,12 +3,14 @@ import BasePage from "components/BasePage";
 import Card from "components/Card";
 
 import * as S from "./styles";
+import PhotoPerfil from "components/PhotoPerfil";
 
 interface Props {}
 
 export default function HomeTemplate({}: Props): ReactElement {
   return (
     <BasePage>
+      <PhotoPerfil />
       <Card title="Leandro Hermes">
         <S.ContainerInfo>
           <span>Sinop - Mato Grosso</span>

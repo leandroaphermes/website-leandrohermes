@@ -1,7 +1,7 @@
 const base = {
   grid: {
-    container: "130rem",
-    gutter: "3.2rem",
+    container: "30rem",
+    gutter: "2.2rem",
   },
   border: {
     radius: "0.4rem",
