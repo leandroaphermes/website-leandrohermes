@@ -1,7 +1,7 @@
 const base = {
   grid: {
     container: "30rem",
-    gutter: "2.2rem",
+    gutter: "1rem",
   },
   border: {
     radius: "0.4rem",
@@ -12,6 +12,7 @@ const base = {
     normal: 400,
     bold: 600,
     sizes: {
+      xxsmall: "0.8rem",
       xsmall: "1.2rem",
       small: "1.4rem",
       medium: "1.6rem",
@@ -29,6 +30,7 @@ const base = {
     large: "4.0rem",
     xlarge: "4.8rem",
     xxlarge: "5.6rem",
+    huge: "6.4rem",
   },
   layers: {
     base: 10,

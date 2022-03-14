@@ -7,21 +7,21 @@ export const Wrapper = styled.ul`
   padding: 0;
 `;
 
-export const MenuItem = styled.li`
+export type MenuItemProps = {
+  isActive: boolean;
+};
+
+export const MenuItem = styled.li<MenuItemProps>`
   display: block;
   padding: 10px 20px;
   cursor: pointer;
   text-align: center;
   font-size: 20px;
 
-  ${({ theme }) => css`
+  ${({ theme, isActive }) => css`
     & > a {
       text-decoration: none;
-      color: ${theme.colors.text};
-    }
-
-    & > a:hover {
-      color: ${theme.colors.gray};
+      color: ${isActive ? theme.colors.gray : theme.colors.text};
     }
 
     &:hover {

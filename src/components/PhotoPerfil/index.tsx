@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "next/image";
 
 export default function PhotoPerfil() {
   return (
-    <Image
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
       src="/image/perfio.jpg"
       alt="Foto de Perfio"
       width={100}

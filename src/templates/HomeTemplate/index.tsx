@@ -1,15 +1,15 @@
 import React, { ReactElement } from "react";
-import BasePage from "components/BasePage";
+
 import Card from "components/Card";
+import PhotoPerfil from "components/PhotoPerfil";
 
 import * as S from "./styles";
-import PhotoPerfil from "components/PhotoPerfil";
 
 interface Props {}
 
 export default function HomeTemplate({}: Props): ReactElement {
   return (
-    <BasePage>
+    <>
       <PhotoPerfil />
       <Card title="Leandro Hermes">
         <S.ContainerInfo>
@@ -28,6 +28,6 @@ export default function HomeTemplate({}: Props): ReactElement {
           </a>
         </S.ContainerInfo>
       </Card>
-    </BasePage>
+    </>
   );
 }

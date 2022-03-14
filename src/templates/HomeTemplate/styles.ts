@@ -4,7 +4,7 @@ export const ContainerInfo = styled.address`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.large};
     color: ${theme.colors.gray};
-    font-weight: 400;
+    font-weight: ${theme.font.normal};
 
     > * {
       padding: 5px;

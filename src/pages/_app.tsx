@@ -1,3 +1,4 @@
+import BasePage from "components/BasePage";
 import ThemeProvider from "context/ThemeContext";
 import { AppProps } from "next/app";
 import Head from "next/head";
@@ -12,7 +13,9 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Developer fullstack for web" />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <BasePage>
+        <Component {...pageProps} />
+      </BasePage>
     </ThemeProvider>
   );
 }
