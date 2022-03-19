@@ -1,8 +1,15 @@
 import styled, { css } from "styled-components";
 
-export const Wrapper = styled.div`
+export type WrapperProps = {
+  isCollapsed: boolean;
+};
+
+export const Wrapper = styled.div<WrapperProps>`
   display: flex;
   height: 100vh;
+  @media screen and (max-width: 786px) {
+    flex-direction: column;
+  }
 `;
 
 export const Main = styled.main`
@@ -10,17 +17,12 @@ export const Main = styled.main`
   flex: 1;
 `;
 
-export type ContentProps = {
-  full?: boolean;
-};
-
-export const Content = styled.div<ContentProps>`
-  ${({ theme, full }) => css`
+export const Content = styled.div`
+  ${({ theme }) => css`
     padding: ${theme.spacings.medium};
-    ${!full &&
-    css`
-      max-width: 1400px;
-      margin: 0px auto;
-    `}
+
+    max-width: 1400px;
+    margin: 0px auto;
+    height: 100%;
   `}
 `;

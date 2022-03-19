@@ -1,18 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Menu from "components/Menu";
 
 import * as S from "./styles";
 
-export default function Header() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+export type HeaderProps = {
+  isCollapsed: boolean;
+  onOpenMenu: (isCollapsed: boolean) => void;
+  onCloseMenu: (isCollapsed: boolean) => void;
+};
 
+export default function Header({
+  isCollapsed,
+  onCloseMenu,
+  onOpenMenu,
+}: HeaderProps) {
   return (
     <S.Wrapper isCollapsed={isCollapsed}>
-      <S.CloseButtom onClick={() => setIsCollapsed(!isCollapsed)}>
-        X
-      </S.CloseButtom>
-      <Menu />
+      {isCollapsed && (
+        <S.OpenMenu onClick={() => onOpenMenu(isCollapsed)}>Menu</S.OpenMenu>
+      )}
+      <S.CloseButtom onClick={() => onCloseMenu(isCollapsed)}>X</S.CloseButtom>
+      <S.ContainerMenu>
+        <Menu />
+      </S.ContainerMenu>
     </S.Wrapper>
   );
 }

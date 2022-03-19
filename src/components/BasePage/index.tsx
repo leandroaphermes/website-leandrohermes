@@ -1,5 +1,5 @@
 import Header from "components/Header";
-import React, { ReactElement } from "react";
+import React, { ReactElement, useState } from "react";
 import { Wrapper, Main, Content } from "./styles";
 
 interface BasePageProps {
@@ -7,9 +7,15 @@ interface BasePageProps {
 }
 
 export default function BasePage({ children }: BasePageProps): ReactElement {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
   return (
-    <Wrapper>
-      <Header />
+    <Wrapper isCollapsed={isCollapsed}>
+      <Header
+        isCollapsed={isCollapsed}
+        onOpenMenu={() => setIsCollapsed(false)}
+        onCloseMenu={() => setIsCollapsed(true)}
+      />
       <Main>
         <Content>{children}</Content>
       </Main>

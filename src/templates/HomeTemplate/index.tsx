@@ -9,7 +9,7 @@ interface Props {}
 
 export default function HomeTemplate({}: Props): ReactElement {
   return (
-    <>
+    <S.Wrapper>
       <PhotoPerfil />
       <Card title="Leandro Hermes">
         <S.ContainerInfo>
@@ -28,6 +28,6 @@ export default function HomeTemplate({}: Props): ReactElement {
           </a>
         </S.ContainerInfo>
       </Card>
-    </>
+    </S.Wrapper>
   );
 }
