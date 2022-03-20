@@ -15,6 +15,10 @@ export default function Header({
   onCloseMenu,
   onOpenMenu,
 }: HeaderProps) {
+  function handleClick() {
+    onCloseMenu(isCollapsed);
+  }
+
   return (
     <S.Wrapper isCollapsed={isCollapsed}>
       {isCollapsed && (
@@ -22,7 +26,7 @@ export default function Header({
       )}
       <S.CloseButtom onClick={() => onCloseMenu(isCollapsed)}>X</S.CloseButtom>
       <S.ContainerMenu>
-        <Menu />
+        <Menu onClick={handleClick} />
       </S.ContainerMenu>
     </S.Wrapper>
   );

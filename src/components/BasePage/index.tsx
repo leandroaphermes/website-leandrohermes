@@ -7,7 +7,7 @@ interface BasePageProps {
 }
 
 export default function BasePage({ children }: BasePageProps): ReactElement {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
     <Wrapper isCollapsed={isCollapsed}>

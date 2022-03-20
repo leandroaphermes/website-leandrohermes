@@ -1,14 +1,22 @@
 import React from "react";
-import NavLink from "./NavLink";
+import NavLink, { NavLinkProps } from "./NavLink";
 
 import * as S from "./styles";
 
-export default function Menu() {
+export type MenuProps = Pick<NavLinkProps, "onClick">;
+
+export default function Menu({ onClick }: MenuProps) {
   return (
     <S.Wrapper>
-      <NavLink href="/">Home</NavLink>
-      <NavLink href="/projetos">Projetos</NavLink>
-      <NavLink href="/sobre-mim">Sobre Mim</NavLink>
+      <NavLink href="/" onClick={onClick}>
+        Home
+      </NavLink>
+      <NavLink href="/projetos" onClick={onClick}>
+        Projetos
+      </NavLink>
+      <NavLink href="/sobre-mim" onClick={onClick}>
+        Sobre Mim
+      </NavLink>
     </S.Wrapper>
   );
 }
